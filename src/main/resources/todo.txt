@@ -1,0 +1,14 @@
+- Connect to .m2 in-memory database
+- Create side mapping table
+    Columns:
+        id
+        side: int
+        workspaceId: String
+        userId: String
+- Create API:
+    /post: assignSide
+        {
+            "side": 1,
+            "workspaceId": "",
+            "userId": ""
+        }
