@@ -16,7 +16,6 @@ public class FlipController {
 
     @GetMapping("/flip")
     public String flipSide(@RequestParam String sideId) {
-
-
+        return "Hello, World!";
     }
 }
