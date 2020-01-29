@@ -16,6 +16,6 @@ public class FlipController {
 
     @GetMapping("/flip")
     public String flipSide(@RequestParam String sideId) {
-        return "Hello, World!";
+        return "Mock: Flipping to side with id: " + sideId;
     }
 }
