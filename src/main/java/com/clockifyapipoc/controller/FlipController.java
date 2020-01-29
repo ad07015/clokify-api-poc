@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FlipController {
 
-    @Value("com.clockifyapipoc.baseUrl")
+    @Value("${com.clockifyapipoc.baseUrl}")
     private String baseUrl;
 
-    @Value("com.clockifyapipoc.apiKey")
+    @Value("${com.clockifyapipoc.apiKey}")
     private String apiKey;
 
     @GetMapping("/flip")
     public String flipSide(@RequestParam String sideId) {
-        return "Mock: Flipping to side with id: " + sideId;
+        return "Mock: Flipping to side with id: " + sideId + ". Calling " + baseUrl + " with apiKey: " + apiKey;
     }
 }
